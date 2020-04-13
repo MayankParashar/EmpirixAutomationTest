@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="19060" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:16 IST">
+    <groups>
+    </groups>
+    <test name="Firefox Test" duration-ms="19060" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:16 IST">
+      <class name="com.pack.ParallelTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="openBrowser" is-config="true" duration-ms="8118" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login_TestCase()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="login_TestCase" duration-ms="6967" started-at="2020-04-13T20:21:05 IST" finished-at="2020-04-13T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_TestCase -->
+        <test-method status="PASS" signature="search_TestCase()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="search_TestCase" duration-ms="1941" started-at="2020-04-13T20:21:12 IST" finished-at="2020-04-13T20:21:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_TestCase -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="closeBrowser" is-config="true" duration-ms="2025" started-at="2020-04-13T20:21:14 IST" finished-at="2020-04-13T20:21:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.pack.ParallelTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>
