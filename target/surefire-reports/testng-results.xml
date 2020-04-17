@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel test suite" duration-ms="19060" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:16 IST">
+  <suite name="Parallel test suite" duration-ms="9424" started-at="2020-04-18T03:15:49 IST" finished-at="2020-04-18T03:15:59 IST">
     <groups>
     </groups>
-    <test name="Firefox Test" duration-ms="19060" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:16 IST">
+    <test name="Chrome Test" duration-ms="9424" started-at="2020-04-18T03:15:49 IST" finished-at="2020-04-18T03:15:59 IST">
       <class name="com.pack.ParallelTest">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="openBrowser" is-config="true" duration-ms="8118" started-at="2020-04-13T20:20:57 IST" finished-at="2020-04-13T20:21:05 IST">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.pack.ParallelTest@6e1567f1]" name="openBrowser" is-config="true" duration-ms="6247" started-at="2020-04-18T03:15:49 IST" finished-at="2020-04-18T03:15:55 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login_TestCase()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="login_TestCase" duration-ms="6967" started-at="2020-04-13T20:21:05 IST" finished-at="2020-04-13T20:21:12 IST">
+        <test-method status="PASS" signature="login_TestCase()[pri:0, instance:com.pack.ParallelTest@6e1567f1]" name="login_TestCase" duration-ms="1860" started-at="2020-04-18T03:15:56 IST" finished-at="2020-04-18T03:15:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_TestCase -->
-        <test-method status="PASS" signature="search_TestCase()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="search_TestCase" duration-ms="1941" started-at="2020-04-13T20:21:12 IST" finished-at="2020-04-13T20:21:14 IST">
+        <test-method status="PASS" signature="search_TestCase()[pri:0, instance:com.pack.ParallelTest@6e1567f1]" name="search_TestCase" duration-ms="607" started-at="2020-04-18T03:15:57 IST" finished-at="2020-04-18T03:15:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_TestCase -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.pack.ParallelTest@6e06451e]" name="closeBrowser" is-config="true" duration-ms="2025" started-at="2020-04-13T20:21:14 IST" finished-at="2020-04-13T20:21:16 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.pack.ParallelTest@6e1567f1]" name="closeBrowser" is-config="true" duration-ms="683" started-at="2020-04-18T03:15:58 IST" finished-at="2020-04-18T03:15:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.pack.ParallelTest -->
-    </test> <!-- Firefox Test -->
+    </test> <!-- Chrome Test -->
   </suite> <!-- Parallel test suite -->
 </testng-results>
