@@ -9,7 +9,7 @@
   <test name="Chrome Test">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.ParallelTest"/>
+      <class name="com.Empirix.testCases.ParallelTest"/>
     </classes>
   </test>
 <!--     <test name="Internet Explorer Test"> -->
