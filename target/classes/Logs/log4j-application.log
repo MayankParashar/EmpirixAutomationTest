@@ -1,2 +1,7 @@
-2020-04-18 03:15:57 INFO  Log:12 - login_TestCase Test is Starting...
-2020-04-18 03:15:58 INFO  Log:12 - login_TestCase Test is Starting...
+2020-04-20 15:36:36 INFO  Log:22 - Chrome Launched
+2020-04-20 15:37:05 INFO  Log:22 - https://services.empirix.com/ Url Navigated
+2020-04-20 15:37:05 INFO  Log:12 - loginTest **********Test Start**********
+2020-04-20 15:37:06 INFO  Log:22 - QA_traininguser25 is fetched from excel
+2020-04-20 15:37:06 INFO  Log:22 - Empirix! is fetched from excel
+2020-04-20 15:37:39 INFO  Log:22 - ValidLoginTest Screenshot has been taken
+2020-04-20 15:37:40 INFO  Log:22 - Browser closed

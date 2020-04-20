@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Parallel_test_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.pack.ParallelTest" hash-for-method="login_TestCase">login_TestCase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.Empirix.testCases.ParallelTest" hash-for-method="login_TestCase">login_TestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.pack.ParallelTest" hash-for-method="search_TestCase">search_TestCase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.Empirix.testCases.ParallelTest" hash-for-method="search_TestCase">search_TestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Parallel_test_suite -->
@@ -125,7 +125,7 @@
           <div class="suite-Parallel_test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.pack.ParallelTest</span>
+              <span class="class-name">com.Empirix.testCases.ParallelTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -157,7 +157,7 @@
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Chrome Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pack.ParallelTest&quot;/&gt;
+      &lt;class name=&quot;com.Empirix.testCases.ParallelTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome Test --&gt;
 &lt;/suite&gt; &lt;!-- Parallel test suite --&gt;
@@ -200,17 +200,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login_TestCase')
-data.setCell(0, 2, 'com.pack.ParallelTest')
-data.setCell(0, 3, 1860);
+data.setCell(0, 2, 'com.Empirix.testCases.ParallelTest')
+data.setCell(0, 3, 5261);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'search_TestCase')
-data.setCell(1, 2, 'com.pack.ParallelTest')
-data.setCell(1, 3, 607);
+data.setCell(1, 2, 'com.Empirix.testCases.ParallelTest')
+data.setCell(1, 3, 1916);
 window.suiteTableData['Parallel_test_suite']= { tableData: data, tableDiv: 'times-div-Parallel_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Parallel_test_suite">
               </div> <!-- times-div-Parallel_test_suite -->
             </div> <!-- times-div -->
@@ -236,22 +236,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pack.ParallelTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Empirix.testCases.ParallelTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login_TestCase</span>
-                <span class="method-start">6262 ms</span>
+                <span class="method-start">6628 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search_TestCase</span>
-                <span class="method-start">8124 ms</span>
+                <span class="method-start">11892 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">8737 ms</span>
+                <span class="method-start">13814 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

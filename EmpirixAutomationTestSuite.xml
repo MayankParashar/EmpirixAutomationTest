@@ -1,21 +1,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel test suite" parallel="tests">
-<!--   <test name="Firefox Test"> -->
-<!--   <parameter name="browser" value="Firefox"/> -->
-<!--     <classes> -->
-<!--       <class name="com.pack.ParallelTest"/> -->
-<!--     </classes> -->
-<!--   </test> -->
-  <test name="Chrome Test">
-  <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.Empirix.testCases.ParallelTest"/>
-    </classes>
-  </test>
-<!--     <test name="Internet Explorer Test"> -->
-<!--     <parameter name="browser" value="IE"/> -->
-<!--     <classes> -->
-<!--       <class name="com.pack.ParallelTest"/> -->
-<!--     </classes> -->
-<!--   </test> -->
+	<!-- <test name="Firefox Test"> -->
+	<!-- <parameter name="browser" value="Firefox"/> -->
+	<!-- <classes> -->
+	<!-- <class name="com.pack.ParallelTest"/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="testurl"
+			value="https://services.empirix.com/" />
+		<classes>
+			<class name="com.empirix.testCases.LoginTest" />
+		</classes>
+	</test>
+	<!-- <test name="Internet Explorer Test"> -->
+	<!-- <parameter name="browser" value="IE"/> -->
+	<!-- <classes> -->
+	<!-- <class name="com.pack.ParallelTest"/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 </suite>
