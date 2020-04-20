@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utilities.Log;
+
 public class LoginPage {
 	
 	@FindBy(xpath = "//label[(text()=' Username ')]/..//input")
@@ -34,6 +36,11 @@ public class LoginPage {
 	public void verifyLoginPage()
 	{
 		boolean flag = validLoginMsg.isDisplayed();
-		System.out.println(flag);
+		if(flag) {
+			Log.debug("Login Pass");
+		}
+		else {
+			Log.error("Login Failed");
+		}
 	}
 }

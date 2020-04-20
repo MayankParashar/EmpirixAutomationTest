@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="tests">
-  <test thread-count="5" name="Chrome Test(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Internet Explorer Test(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
     <parameter name="testurl" value="https://services.empirix.com/"/>
     <classes>
       <class name="com.empirix.testCases.LoginTest">
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- com.empirix.testCases.LoginTest -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Internet Explorer Test(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->

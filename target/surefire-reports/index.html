@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Parallel_test_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,20 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Parallel_test_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="hide-methods skipped suite-Parallel_test_suite"> (hide)</a> <!-- hide-methods skipped suite-Parallel_test_suite -->
+                      <a href="#" panel-name="suite-Parallel_test_suite" class="show-methods skipped suite-Parallel_test_suite"> (show)</a> <!-- show-methods skipped suite-Parallel_test_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Parallel_test_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel_test_suite" title="com.empirix.testCases.LoginTest" hash-for-method="ValidLoginTest">ValidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Parallel_test_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,8 +148,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;IQA_MAYANKPARAS&apos;, ip: &apos;192.168.1.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Impactqa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Impactqa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 96509f84b77eb1f9fa615b42ade495b4
 *** Element info: {Using=xpath, value=//a[@id=&apos;logo&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -150,7 +164,7 @@ Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.empirix.pageObjectRepository.LoginPage.verifyLoginPage(LoginPage.java:36)
+	at com.empirix.pageObjectRepository.LoginPage.verifyLoginPage(LoginPage.java:38)
 	at com.empirix.testCases.LoginTest.ValidLoginTest(LoginTest.java:24)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -163,6 +177,30 @@ Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Parallel_test_suite-class-failed -->
+          <div class="suite-Parallel_test_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.empirix.testCases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLoginTest">
+                  </a> <!-- ValidLoginTest -->
+                  <span class="method-name">ValidLoginTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.utilities.BaseLib.setUp(BaseLib.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_test_suite-class-skipped -->
         </div> <!-- panel Parallel_test_suite -->
         <div panel-name="test-xml-Parallel_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -173,6 +211,13 @@ Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Parallel test suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Firefox Test&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;testurl&quot; value=&quot;https://services.empirix.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.empirix.testCases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Chrome Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;testurl&quot; value=&quot;https://services.empirix.com/&quot;/&gt;
@@ -180,6 +225,13 @@ Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
       &lt;class name=&quot;com.empirix.testCases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Internet Explorer Test&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
+    &lt;parameter name=&quot;testurl&quot; value=&quot;https://services.empirix.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.empirix.testCases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Internet Explorer Test --&gt;
 &lt;/suite&gt; &lt;!-- Parallel test suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,7 +243,13 @@ Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Firefox Test (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Internet Explorer Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,11 +275,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ValidLoginTest')
 data.setCell(0, 2, 'com.empirix.testCases.LoginTest')
-data.setCell(0, 3, 72770);
+data.setCell(0, 3, 76859);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ValidLoginTest')
+data.setCell(1, 2, 'com.empirix.testCases.LoginTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['Parallel_test_suite']= { tableData: data, tableDiv: 'times-div-Parallel_test_suite'}
 return data;
 }
@@ -257,19 +319,59 @@ return data;
                 <span class="method-name">setUp(chrome, https://services.empirix.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(ie, https://services.empirix.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, https://services.empirix.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidLoginTest</span>
+                <span class="method-start">7960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">7967 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ValidLoginTest</span>
-                <span class="method-start">36567 ms</span>
+                <span class="method-start">31453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValidLoginTest</span>
+                <span class="method-start">37242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=ValidLoginTest status=FAILURE method=LoginTest.ValidLoginTest()[pri:1, instance:com...)</span>
-                <span class="method-start">109357 ms</span>
+                <span class="method-start">91981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">93121 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ValidLoginTest status=FAILURE method=LoginTest.ValidLoginTest()[pri:1, instance:com...)</span>
+                <span class="method-start">114105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">109973 ms</span>
+                <span class="method-start">114783 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

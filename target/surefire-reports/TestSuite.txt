@@ -1,8 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.419 s <<< FAILURE! - in TestSuite
-com.empirix.testCases.LoginTest.ValidLoginTest  Time elapsed: 72.784 s  <<< FAILURE!
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 2, Time elapsed: 116.272 s <<< FAILURE! - in TestSuite
+com.empirix.testCases.LoginTest.setUp  Time elapsed: 8.665 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.empirix.testCases.LoginTest.closeBrowser  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.empirix.testCases.LoginTest.ValidLoginTest  Time elapsed: 54.734 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //label[(text()=' Username ')]/..//input
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IQA_MAYANKPARAS', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13280, moz:profile: C:\Users\Impactqa\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eb519ddf-9227-47fd-84ee-d6e69e48388b
+*** Element info: {Using=xpath, value=//label[(text()=' Username ')]/..//input}
+	at com.empirix.testCases.LoginTest.ValidLoginTest(LoginTest.java:23)
+
+com.empirix.testCases.LoginTest.closeBrowser  Time elapsed: 55.932 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IQA_MAYANKPARAS', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13280, moz:profile: C:\Users\Impactqa\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eb519ddf-9227-47fd-84ee-d6e69e48388b
+
+com.empirix.testCases.LoginTest.ValidLoginTest  Time elapsed: 76.857 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='logo']"}
   (Session info: chrome=80.0.3987.163)
@@ -10,8 +37,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'IQA_MAYANKPARAS', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Impactqa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 656031fff7ccfe8a2cbae9b87aef7bc6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Impactqa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 96509f84b77eb1f9fa615b42ade495b4
 *** Element info: {Using=xpath, value=//a[@id='logo']}
 	at com.empirix.testCases.LoginTest.ValidLoginTest(LoginTest.java:24)
 

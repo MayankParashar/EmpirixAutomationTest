@@ -5,7 +5,7 @@
 		<parameter name="testurl"
 			value="https://services.empirix.com/" />
 		<classes>
-			<class name="com.pack.ParallelTest" />
+			<class name="com.empirix.testCases.LoginTest" />
 		</classes>
 	</test>
 	<test name="Chrome Test">
@@ -21,7 +21,7 @@
 		<parameter name="testurl"
 			value="https://services.empirix.com/" />
 		<classes>
-			<class name="com.pack.ParallelTest" />
+			<class name="com.empirix.testCases.LoginTest" />
 		</classes>
 	</test>
 </suite>
