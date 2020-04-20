@@ -22,6 +22,7 @@ public class LoginTest extends BaseLib {
 		LoginPage lp = new LoginPage(driver);
 		lp.login(username, password);
 		lp.verifyLoginPage();
+		Log.endLog("loginTest");
 	}
 
 }
