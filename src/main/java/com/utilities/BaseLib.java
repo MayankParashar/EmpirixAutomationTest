@@ -35,7 +35,7 @@ public class BaseLib {
 				driver = new FirefoxDriver();
 				Log.info("Firefox Launched");
 				Reporter.log("Firefox Launched", true);
-			} else if (browsername.equalsIgnoreCase("Chrome")) {
+			} else if (browsername.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./src/main/resources/Drivers/chromedriver.exe");
 				driver = new ChromeDriver();
 				Log.info("Chrome Launched");
